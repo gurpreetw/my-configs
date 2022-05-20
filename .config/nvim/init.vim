@@ -29,6 +29,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'https://github.com/ryanoasis/vim-devicons'
 Plug 'https://github.com/tc50cal/vim-terminal' 
 
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 set encoding=UTF-8
 
 call plug#end()
@@ -42,8 +44,11 @@ nnoremap <C-f> :NERDTreeFind<CR>
 
 nnoremap <C-h> :TerminalSplit zsh<CR>
 
+inoremap <silent><expr> <TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
 :set completeopt-=preview " For No Previews
 
-:colorscheme jellybeans
+:colorscheme nord 
 
 
