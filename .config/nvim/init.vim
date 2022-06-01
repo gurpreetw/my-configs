@@ -29,6 +29,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'https://github.com/ryanoasis/vim-devicons'
 Plug 'https://github.com/tc50cal/vim-terminal' 
 
+Plug 'chun-yang/auto-pairs'
+
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 set encoding=UTF-8
@@ -49,6 +51,7 @@ inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 :set completeopt-=preview " For No Previews
 
-:colorscheme nord 
+:colorscheme jellybeans  
 
+let g:airline_theme='snow_dark'
 
